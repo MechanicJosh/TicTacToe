@@ -23,16 +23,6 @@ function myEvery(cell){
     return cell.textContent !== '';
 }
 
-let x = 0;
-let y = 1;
-let z = 2;
-
-function winningConditions(x,y,z){
-    if(cells[x].textContent != "" && cells[x].textContent === cells[y].textContent && cells[y].textContent === cells[z].textContent );
-    congrats.innerHTML = 'Winner is ' + event.target.textContent;
-        gameComplete = true;
-}
-
 function cellClicked(event){
 
     if (gameComplete){
